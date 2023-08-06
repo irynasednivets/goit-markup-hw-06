@@ -27,6 +27,9 @@
         align-items: center;
         padding: 25px 0;
     }
+    .menu_but_icon{
+        stroke:#2E2F42;
+     }
 }
 
 /* ------------Tablet---------------- */
