@@ -186,7 +186,7 @@ body {
     position: fixed;
      top: 0;
      left: 0;
-     background-color: var(--white);
+     background-color: #ffffff;
      width: 100vw;
      height: 100vh;
      z-index: 9;
@@ -279,6 +279,9 @@ body {
      padding: 0;
      background-color: transparent;
      border: none;
+ }
+ .menu_but_icon{
+    stroke:#2E2F42;
  }
  .mobile-close-but{
      display: flex;
