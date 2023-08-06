@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
     <header class="header-cont">
@@ -51,11 +52,75 @@
             </li>
             <li class="contacts_item">
               <a class="contacts_link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+                ><span class="phone_number">+11 (000) 111-11-11</span></a
               >
             </li>
           </ul>
         </address>
+        <button class="menu_but js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu" type="button">
+      <svg class="menu_but_icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu_icon"></use>
+      </svg>
+      </button>         
+   </div>
+   <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div>
+          <button class="mobile-close-btn js-close-menu">
+              <svg class="mobile-close-icon" width="8" height="8" >
+              <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+          </button>
+          <nav>
+              <ul class="mob-site-nav list">
+                <li class="mob-list-nav"><a class="mob-link-nav link" href="./index.html"><span class="first-page">Studio</span></a></li>
+                <li class="mob-list-nav"><a class="mob-link-nav link" href="./portfolio.html">Portfolio</a></li>
+                <li class="mob-list-nav"><a class="mob-link-nav link" href="">Contacts</a></li>
+              </ul>
+          </nav>
+      </div>
+     <div>
+      <address class="mob-contacts">
+       <ul class="mob-contacts-item list">
+           <li class="mob-cont-info">
+               <a class="mob-contact-link link" href="tel:+11(000)111-11-11"><span class="phone-nomber">+11 (000) 111-11-11</span></a>
+           </li>
+           <li class="mob-cont-info">
+               <a class="mob-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+           </li>            
+       </ul>
+      </address>
+      <ul class="mob-social-list list">
+       <li class="mob-social-item">
+           <a class="mob-social-link" href="">
+               <svg class="social-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-instagram_2"></use>
+               </svg>
+           </a>
+       </li>
+       <li class="mob-social-item">
+           <a class="mob-social-link" href="">
+               <svg class="social-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-twitter_1"></use>
+               </svg>
+           </a>
+       </li>
+       <li class="mob-social-item">
+           <a class="mob-social-link" href="">
+               <svg class="social-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-facebook_1"></use>
+               </svg>
+           </a>
+       </li>
+       <li class="mob-social-item">
+           <a class="mob-social-link" href="">
+               <svg class="social-icon" width="24" height="24">
+                   <use href="./images/icons.svg#icon-linkedin_1"></use>
+               </svg>
+           </a>
+       </li>
+      </ul>
+     </div>
       </div>
     </header>
     <main>
@@ -127,13 +192,13 @@
           <h2 class="main_activity_title">What are we doing</h2>
           <ul class="main_activity list">
             <li class="main_activity_item">
-              <img src="./images/product_1.jpg" alt="laptop" width="360" />
+              <img srcset="./images/product_1.jpg 1x, ./images/product_1-2x 2x" src="./images/product_1.jpg" alt="laptop" width="360" />
             </li>
             <li class="main_activity_item">
-              <img src="./images/product_2.jpg" alt="app" width="360" />
+              <img srcset="./images/product_2.jpg 1x, ./images/product_2-2x 2x" src="./images/product_2.jpg" alt="app" width="360" />
             </li>
             <li class="main_activity_item">
-              <img src="./images/product_3.jpg" alt="phone" width="360" />
+              <img srcset="./images/product_3.jpg 1x, ./images/product_3-2x 2x" src="./images/product_3.jpg" alt="phone" width="360" />
             </li>
           </ul>
         </div>
@@ -143,7 +208,7 @@
           <h2 class="main_team_title">Our Team</h2>
           <ul class="main_team_li list">
             <li class="main_team_item">
-              <img src="./images/img_1.jpg" alt="Mark Guerrero" width="264" />
+              <img class="photo-team" srcset="./images/img_1.jpg 1x, ./images/img_1-2x 2x" src="./images/img_1.jpg" alt="Mark Guerrero" width="264" />
               <div class="team_text">
                 <h3 class="main_team_item_title">Mark Guerrero</h3>
                 <p class="main_team_item_text">Product Designer</p>
@@ -183,7 +248,7 @@
               </div>
             </li>
             <li class="main_team_item">
-              <img src="./images/img_2.jpg" alt="Tom Ford" width="264" />
+              <img class="photo-team" srcset="./images/img_2.jpg 1x, ./images/img_2-2x 2x"src="./images/img_2.jpg" alt="Tom Ford" width="264" />
               <div class="team_text">
                 <h3 class="main_team_item_title">Tom Ford</h3>
                 <p class="main_team_item_text">Frontend Developer</p>
@@ -223,7 +288,7 @@
               </div>
             </li>
             <li class="main_team_item">
-              <img src="./images/img_3.jpg" alt="Camila Garcia" width="264" />
+              <img class="photo-team" srcset="./images/img_3.jpg 1x, ./images/img_3-2x 2x" src="./images/img_3.jpg" alt="Camila Garcia" width="264" />
               <div class="team_text">
                 <h3 class="main_team_item_title">Camila Garcia</h3>
                 <p class="main_team_item_text">Marketing</p>
@@ -263,7 +328,7 @@
               </div>
             </li>
             <li class="main_team_item">
-              <img src="./images/img_4.jpg" alt="Daniel Wilson" width="264" />
+              <img class="photo-team" srcset="./images/img_4.jpg 1x, ./images/img_4-2x 2x" src="./images/img_4.jpg" alt="Daniel Wilson" width="264" />
               <div class="team_text">
                 <h3 class="main_team_item_title">Daniel Wilson</h3>
                 <p class="main_team_item_text">UI Designer</p>
@@ -489,5 +554,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
