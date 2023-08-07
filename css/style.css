@@ -447,7 +447,7 @@ body {
 
 .main_activity_section {
     padding-bottom: 120px;
-    display: none;
+    display: flex;
 }
 
 .main_activity_title {
