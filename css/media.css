@@ -169,7 +169,9 @@
     .main_info_subtitle {
         text-align: left;
     }
-
+    .main_info_text{
+    font-weight: 400;
+}
     .main_team_title {
         text-align: center;
         margin-bottom: 8px;
