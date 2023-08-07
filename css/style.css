@@ -413,17 +413,19 @@ body {
     display: none;
 }
 
-/* .main_info_li {
+.main_info_li {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
+    width: 100%;
 }
 
-.main_info_item {
+/* .main_info_item {
     width: calc((100% - 72px) / 4);
 }
+ */
 
 
-*/
 
 .main_info_subtitle {
     font-weight: 700;
