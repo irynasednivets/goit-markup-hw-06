@@ -33,7 +33,7 @@
         stroke: #2E2F42;
     }
     .footer_but{
-        display: flex;
+        display: block;
     }
 }
 
