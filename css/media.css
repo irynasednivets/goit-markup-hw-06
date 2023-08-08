@@ -21,6 +21,7 @@
     .logo{
         margin: 0;
     }
+ 
 }
 
 /* ------------Tablet---------------- */
@@ -225,6 +226,9 @@
         margin: 0;
         height: 40px;
     }
+    .label_subscription {
+        margin-bottom: 0;
+    }
 
     .modal-window {
         width: 408px;
@@ -387,10 +391,10 @@
     .footer_logo {
         justify-content: left;
     }
+
     .label_subscription {
         margin-bottom: 0;
     }
-
     .footer_text {
         max-width: 264px;
     }
