@@ -101,7 +101,6 @@ body {
     color: var(--basic-color-logo);
     display: flex;
     align-items: center;
-    margin-right: 76px;
     padding: 25px 0;
 }
 
@@ -285,6 +284,10 @@ body {
     font-style: normal;
 }
 
+.contacts_mail {
+    margin-bottom: 12px;
+}
+
 .social-icon {
     fill: #f4f4fd;
 }
@@ -343,7 +346,7 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-     line-height: 1.11;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin: 0 auto;
     margin-bottom: 72px;
@@ -447,18 +450,10 @@ body {
 
 .main_activity_section {
     padding-bottom: 120px;
-    display: flex;
+    display: none;
 }
 
-.main_activity_title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--primary-black);
-    margin-bottom: 72px;
-}
+
 
 .main_activity {
     display: flex;
@@ -473,16 +468,7 @@ body {
     padding: 96px 0;
 }
 
-.main_team_title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: var(--primary-black);
-    margin-bottom: 72px;
-}
+
 
 .main_activity_item {
     width: calc((100% - 48px) / 3);
@@ -494,6 +480,17 @@ body {
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.section_title {
+    color: var(--primary-black);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .photo-team {
@@ -570,30 +567,18 @@ body {
     padding: 96px 0;
 }
 
-.customers_title {
-    font-size: 36px;
-    line-height: 1.11;
-    color: #2e2f42;
-    margin-bottom: 72px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    font-weight: 700;
-}
-
 .customers_list {
     display: flex;
-    gap: 72px 16px;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 72px 16px;
     width: 100%;
 }
 
 .customers_item {
-    width: calc((100% - 24px * 5) / 6);
+    width: calc((100% - 16px) / 2);
     height: 88px;
-    max-width: 168px;
-    align-items: center;
+    max-width: 190px;
 
 }
 
@@ -789,6 +774,8 @@ body {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin: auto;
+
 }
 
 .footer_but:is(:hover, :focus) {
